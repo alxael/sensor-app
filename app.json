@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "plugins": [
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Allow Sensors App to access your device motion."
+        }
+      ]
+    ]
+  }
+}
