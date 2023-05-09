@@ -40,7 +40,7 @@ const App = () => {
       <ScrollView>
         <AccelerometerComponent />
         <BarometerComponent />
-        {/* <DeviceMotionComponent /> */}
+        <DeviceMotionComponent />
         <GyroscopeComponent />
         <LightSensorComponent />
         <MagnetometerComponent />

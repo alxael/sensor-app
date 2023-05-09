@@ -6,8 +6,8 @@ import { Text, Surface, Card } from "react-native-paper";
 
 const styles = StyleSheet.create({
   card: {
-    marginTop: "1rem",
-    marginBottom: "1rem"
+    marginTop: 75,
+    marginBottom: 25
   }
 });
 

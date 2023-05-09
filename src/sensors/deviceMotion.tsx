@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 
 const styles = StyleSheet.create({
   card: {
-    marginTop: "1rem",
-    marginBottom: "1rem"
-  },
+    marginTop: 25,
+    marginBottom: 25
+  }
 });
 
 const DeviceMotionComponent = () => {
@@ -52,7 +52,9 @@ const DeviceMotionComponent = () => {
     <Card style={styles.card}>
       <Card.Title title="Device Motion" titleVariant="displaySmall" />
       <Card.Content>
-        <Text variant="titleLarge">{data.orientation}</Text>
+        <Text variant="titleLarge">Alpha: {data.rotation.alpha}</Text>
+        <Text variant="titleLarge">Beta: {data.rotation.beta}</Text>
+        <Text variant="titleLarge">Gamma: {data.rotation.gamma}</Text>
       </Card.Content>
     </Card>
   );

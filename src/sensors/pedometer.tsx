@@ -5,16 +5,17 @@ import { useEffect, useState } from "react";
 
 const styles = StyleSheet.create({
   card: {
-    marginTop: "1rem",
-    marginBottom: "1rem"
-  },
+    marginTop: 25,
+    marginBottom: 75
+  }
 });
+
 const PedometerComponent = () => {
   const [isPedometerAvailable, setIsPedometerAvailable] = useState("checking");
   const [pastStepCount, setPastStepCount] = useState(0);
   const [currentStepCount, setCurrentStepCount] = useState(0);
 
-  const subscribe = async () => {
+  const _subscribe = async () => {
     const isAvailable = await Pedometer.isAvailableAsync();
     setIsPedometerAvailable(String(isAvailable));
 
@@ -35,9 +36,8 @@ const PedometerComponent = () => {
   };
 
   useEffect(() => {
-    const subscription = subscribe();
+    const subscription = _subscribe();
 
-    return () => subscription && (subscription as any).remove();
   }, []);
 
   return (

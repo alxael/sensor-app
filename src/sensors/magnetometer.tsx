@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 
 const styles = StyleSheet.create({
   card: {
-    marginTop: "1rem",
-    marginBottom: "1rem"
-  },
+    marginTop: 25,
+    marginBottom: 25
+  }
 });
 
 interface MagnetometerData {
